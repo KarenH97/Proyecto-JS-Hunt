@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 5px;
+
+}
+nav{
+    padding: 10px;
+    width: 100%;
+    background-image: url(../assets/fondo3.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+#container-inicio{
+    display: flex;
+    background-image: url(../assets/IMG_20230807_133558.jpg);
+    
+}
+
+#inicioLogo{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+
+#section{
+    padding: 25px;
+    margin: 10rem;
+    font-size: x-large;
+    background-color: black;
+    color: beige; 
+
+}
+
+
+
+
+#productos{
+    padding: 5rem;
+    border-radius: 10px;
+    color: #000; 
+   
+}
+.card:hover  {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+#coincidenciasDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formContacto{
+    padding: 5rem;
+    background-color: rgb(204, 198, 198);
+
+}
+
+
+
+footer{
+    height: 2rem;
+    background-color: brown;
+}
+
+
+
+
+ /* MEDIA QUERYS */
+
+ /* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
