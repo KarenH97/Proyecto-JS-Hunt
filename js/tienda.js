@@ -8,6 +8,7 @@
  let botonCarrito = document.getElementById("botonCarrito")
  let precioTotal = document.getElementById("precioTotal")
  let botonFinalizarCompra = document.getElementById(`botonFinalizarCompra`)
+ 
 
 
 
@@ -117,11 +118,17 @@ function calcularTotal(array){
     return totalReduce
 }
 
+
+
 function agregarProducto(array){
     let categ = document.getElementById("categInput")
     let carac = document.getElementById("caracInput")
     let precio = document.getElementById("precioInput")
+    let img = document.getElementById("img")
 
+
+
+    
     const nuevoProducto = new Tienda(array.length+1,categ.value, carac.value, parseInt(precio.value), "IMG_20230807_133558.jpg")
     array.push(nuevoProducto)  
     categ.value =""

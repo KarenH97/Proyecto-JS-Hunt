@@ -6,9 +6,6 @@ class Tienda{
        this.precio = precio,
        this.imagen = imagen
     }
-    mostrarProducto(){
-        console.log(`El producto ${this.carac}, tiene un precio de $${this.precio}`)
-    }
    
  }
  
@@ -23,7 +20,12 @@ class Tienda{
  const producto5 = new Tienda(5, "coleccionable", "Modelora de cafe vintage", 8500,"moledordecafe.jpg") 
 
  const producto6 = new Tienda(6, "coleccionable", "Estatua bailarin de porcelana", 13000,"porcelana.jpg") 
- 
+//  Corregir ruta para que lea el json
+// fetch("../js/class.json")
+// .then((resp)=>resp.json())
+// .then((dataProducto)=>{
+//    console.log(dataProducto)
+// })
 
 let stock = []
     if(localStorage.getItem("stock")){

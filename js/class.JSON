@@ -1,0 +1,46 @@
+ [ 
+
+ { "id": 1,
+   "categ":"antiguedad",
+   "carac":"Maquina de escribir", 
+   "precio": 15000, 
+   "imageb":"maquina-escribir.jpg"
+},
+
+{ "id": 2,
+"categ":"coleccionable",
+"carac":"Tren Antiguo", 
+"precio": 6000, 
+"imageb":"tren.jpg"
+},
+
+{ "id": 3,
+"categ":"joyas",
+"carac": "Prendedor de plata estilo colibrí", 
+"precio": 20000, 
+"imageb":"joya1.jpg"
+},
+
+{ "id": 4,
+"categ":"antiguedad",
+"carac":"Reloj de plata", 
+"precio": 90000, 
+"imageb":"relojdeplata.jpg"
+},
+
+{ "id": 5,
+"categ":"coleccionable",
+"carac":"Modelora de cafe vintage", 
+"precio": 85000, 
+"imageb":"moledordecafe.jpg"
+},
+
+{ "id": 6,
+"categ":"coleccionable",
+"carac":"Estatua bailarin de porcelana",  
+"precio": 13000, 
+"imageb":"porcelana.jpg"
+}]
+
+
+ 
