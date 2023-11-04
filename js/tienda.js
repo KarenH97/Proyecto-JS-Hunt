@@ -11,48 +11,6 @@
 
 
 
-class Tienda{
-    constructor(id, categ, carac, precio, imagen){
-       this.id = id,
-       this.categ = categ,
-       this.carac = carac,
-       this.precio = precio,
-       this.imagen = imagen
-    }
-    mostrarProducto(){
-        console.log(`El producto ${this.carac}, tiene un precio de $${this.precio}`)
-    }
-   
- }
- 
- const producto1 = new Tienda(1,"antiguedad", "Maquina de escribir", 15000, "maquina-escribir.jpg")
-
- const producto2 = new Tienda(2,"coleccionable", "Tren Antiguo", 6000,"tren.jpg")
-
- const producto3 = new Tienda(3,"joyas", "Prendedor de plata estilo colibrí", 20000,"joya1.jpg")
-
- const producto4 = new Tienda(4, "antiguedad", "Reloj de plata", 90000,"relojdeplata.jpg") 
-
- const producto5 = new Tienda(5, "coleccionable", "Modelora de cafe vintage", 8500,"moledordecafe.jpg") 
-
- const producto6 = new Tienda(6, "coleccionable", "Estatua bailarin de porcelana", 13000,"porcelana.jpg") 
- 
-
-let stock = []
-    if(localStorage.getItem("stock")){
-
-        for(let produc of JSON.parse(localStorage.getItem("stock"))){
-              let producStorage = new Tienda (produc.id,produc.categ, produc.carac,produc.precio,produc.imagen)
-           stock.push(producStorage)
-         }
-
-     }else{
-     stock.push(producto1,producto2,producto3,producto4,producto5,producto6)
-     localStorage.setItem("stock", JSON.stringify(stock))
-  }
-
-  let productosCarrito = JSON.parse(localStorage.getItem("carrito")) ?? []
-  
 
  
             //    FUNCIONES
@@ -70,7 +28,7 @@ function mostrarCatalogoDOM(array){
                         <p>${producto.carac}</p>
                         <p>${producto.categ}</p>
                         <p class="">Precio: ${producto.precio}</p>
-                    <button id="comprar${producto.id}" class="btn btn-outline-success">Agregar al carrito</button>
+                    <button id="comprar${producto.id}" class="btn btn-dark btn-outline-ligth">Agregar al carrito</button>
                     </div>
            </div>`
         containerProductos.append(producNuevoDiv)
@@ -155,9 +113,10 @@ function calcularTotal(array){
         {return acumulador + producto.precio},
         0
     )
-    totalReduce > 0 ? precioTotal.innerHTML = `<strong> El total de su compra es: ${totalReduce}</strong>` : precioTotal.innerHTML = `No hay productos en el carrito` 
+    totalReduce > 0 ? precioTotal.innerHTML = `<strong> El total de su compra es: ${totalReduce}</strong>` : precioTotal.innerHTML = ` * No hay productos en el carrito` 
     return totalReduce
 }
+
 function agregarProducto(array){
     let categ = document.getElementById("categInput")
     let carac = document.getElementById("caracInput")

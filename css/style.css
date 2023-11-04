@@ -20,11 +20,42 @@ nav{
     
 }
 
+#agregarLibro{
+    color: #ffffff;
+    background-color: rgb(112, 64, 64);
+}
+
+#agregarLibro:hover{
+    color: #000;
+    background-color: white;
+    
+}
+#guardarProductoBtn{
+    color: #ffffff;
+    background-color: rgb(112, 64, 64);
+}
+
 #container-inicio{
     display: flex;
     background-image: url(../assets/IMG_20230807_133558.jpg);
     
 }
+
+#btnProductos{
+    background-color: white;
+}
+
+
+#btnProductos a{
+    color: #000;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#btnProductos:hover{
+    background-color: rgba(151, 99, 56, 0.815);
+}
+
 
 #inicioLogo{
     padding: 10px;
@@ -59,7 +90,10 @@ nav{
 }
 .card:hover  {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    background-color: #d8c7bc;
+    
 }
+
 
 #coincidenciasDiv{
     display: flex;
